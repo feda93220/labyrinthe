@@ -1,0 +1,21 @@
+Le code est très clair, les classes Parser, Cell et Player sont simples et efficaces.
+On peut imaginer chainer les cell à la lecture du fichier texte et avoir
+ainsi pour chaque objet cell 4 voisins (top, right, left, up) accessibles
+facilement pour se déplacer d'une cell à l'autre.
+
+On peut séparer les prints aussi pour potentiellement intégrer plus facilement l'ux
+
+Vous avez l'air relativement à l'aise avec le langage et l'orienté objet.
+
+Un peu de contenu supplémentaire aurait été apprécié,
+peut être ajouter des items à ramasser sur le chemin qui s'ajouteraient à un
+attribut vector<Weapon> du joueur. On peut également essayer de modéliser
+plus clairement le lien entre Player et Maze et ajouter des méthodes pour éviter
+les conditions et la logique "bas niveau" depuis le code appelant.
+
+Ce n'est pas l'objet du cours mais faire un makefile est un peu overkill ici.
+g++ main.cpp src/parser.cpp src/player.cpp fonctionne et est suffisant.
+
+Le code et vos idées sont maitrisées et c'était le principal ici.
+
+16/20
