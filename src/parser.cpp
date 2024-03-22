@@ -1,5 +1,5 @@
-#include "parser.hpp"
-#include "player.hpp"
+#include "../include/parser.hpp"
+#include "../include/player.hpp"
 
 #include <fstream>
 

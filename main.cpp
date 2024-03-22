@@ -2,8 +2,8 @@
 #include <vector>
 #include <limits> 
 
-#include "parser.hpp"
-#include "player.hpp"
+#include "include/parser.hpp"
+#include "include/player.hpp"
 
 int main() {
     Parser parser;
@@ -13,7 +13,8 @@ int main() {
 
     while (true) {
         for (size_t i = 0; i < maze.size(); ++i) {
-            for (size_t j = 0; j < maze[i].size(); ++j) {
+            for (size_t j = 0; j < maze[i].size(); ++j) { // On préfère utiliser les méthodes, ici maze.at(i)
+            // la finalité est la même mais vous aurez, autre autres, une meilleure gestion des erreurs
                 if (std::make_pair(i, j) == player.getPosition()) {
                     std::cout << 'P';
                 } else {
